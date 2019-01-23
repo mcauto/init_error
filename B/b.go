@@ -4,7 +4,7 @@ type InstanceB struct {
 	Data string
 }
 
-func NewInstanceB() *InstanceB{
-  return &InstanceB{Data:"hello world!"}
+func NewInstanceB() (*InstanceB, error){
+  return &InstanceB{Data:"hello world!"}, nil
 }
 
