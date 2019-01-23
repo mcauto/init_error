@@ -6,5 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Println(A.NewFormat())
+	data := A.NewFormat()
+	fmt.Println(data)
 }
