@@ -9,6 +9,9 @@ var instance *B.InstanceB
 func init(){
     var err error
     instance, err = B.NewInstanceB()
+    if err != nil {
+		panic(err)
+    }	
     fmt.Println(instance)
 }
 
