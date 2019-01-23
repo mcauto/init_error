@@ -7,7 +7,8 @@ import (
 var instance *B.InstanceB
 
 func init(){
-    instance = B.NewInstanceB() // reference count의 변화가 없을 것
+    var err error
+    instance, err = B.NewInstanceB()
     fmt.Println(instance)
 }
 
